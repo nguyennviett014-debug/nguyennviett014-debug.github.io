@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidFlow — Authorization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark:   #0A1420;
+      --green:  #1D3D25;
+      --amber:  #C8963C;
+      --cream:  #FAF8F2;
+      --hai:    #8A8A8A;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #162032;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: .05em;
+      margin-bottom: .5rem;
+      color: var(--cream);
+    }
+    .status {
+      font-size: .85rem;
+      color: var(--hai);
+      margin-bottom: 2rem;
+      letter-spacing: .04em;
+    }
+    .status.success { color: #4ade80; }
+    .status.error   { color: #f87171; }
+
+    .code-block {
+      background: rgba(0,0,0,.4);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      text-align: left;
+    }
+    .code-label {
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--hai);
+      margin-bottom: .5rem;
+    }
+    .code-value {
+      font-family: 'Courier New', monospace;
+      font-size: .82rem;
+      color: var(--amber);
+      word-break: break-all;
+      line-height: 1.5;
+    }
+    .copy-btn {
+      background: var(--green);
+      color: var(--cream);
+      border: none;
+      border-radius: 6px;
+      padding: .7rem 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      letter-spacing: .05em;
+      cursor: pointer;
+      transition: background .2s;
+      margin-top: .5rem;
+    }
+    .copy-btn:hover { background: #2E5C28; }
+    .copy-btn.copied { background: #166534; }
+
+    .instruction {
+      font-size: .78rem;
+      color: var(--hai);
+      margin-top: 1.5rem;
+      line-height: 1.7;
+    }
+    .instruction strong { color: var(--cream); }
+
+    .url-block {
+      background: rgba(0,0,0,.3);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 6px;
+      padding: .6rem 1rem;
+      margin: .75rem 0;
+    }
+    .url-value {
+      font-family: 'Courier New', monospace;
+      font-size: .75rem;
+      color: #9ca3af;
+      word-break: break-all;
+    }
+    #copyUrlBtn {
+      margin-top: .75rem;
+      background: #1f2937;
+    }
+    #copyUrlBtn:hover { background: #374151; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="20" fill="#0A1420"/>
+        <polygon points="15,22 28,22 50,62 72,22 85,22 50,70" fill="white"/>
+      </svg>
+    </div>
+
+    <h1>VIDFLOW</h1>
+    <p class="status" id="statusText">Checking authorization…</p>
+
+    <div id="successBlock" style="display:none;">
+      <div class="code-block">
+        <p class="code-label">Authorization Code</p>
+        <p class="code-value" id="codeDisplay"></p>
+      </div>
+      <button class="copy-btn" id="copyCodeBtn" onclick="copyCode()">Copy Code</button>
+
+      <p class="instruction" style="margin-top:1.5rem;">
+        <strong>Next step:</strong> Go back to the terminal running <code>python setup_tiktok.py</code> and paste the <strong>full URL</strong> below:
+      </p>
+      <div class="url-block">
+        <p class="url-value" id="urlDisplay"></p>
+      </div>
+      <button class="copy-btn" id="copyUrlBtn" onclick="copyUrl()">Copy Full URL</button>
+    </div>
+
+    <div id="errorBlock" style="display:none;">
+      <div class="code-block">
+        <p class="code-label">Error Details</p>
+        <p class="code-value" id="errorDisplay"></p>
+      </div>
+      <p class="instruction">Authorization was not completed. Please try running <code>python setup_tiktok.py</code> again.</p>
+    </div>
+
+    <div id="emptyBlock" style="display:none;">
+      <p class="instruction">
+        This page is the OAuth redirect endpoint for VidFlow.<br>
+        Run <strong>python setup_tiktok.py</strong> to start the authorization flow.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code  = params.get('code');
+    const error = params.get('error');
+    const fullUrl = window.location.href;
+
+    if (code) {
+      document.getElementById('statusText').textContent = 'Authorization successful ✓';
+      document.getElementById('statusText').className = 'status success';
+      document.getElementById('codeDisplay').textContent = code;
+      document.getElementById('urlDisplay').textContent = fullUrl;
+      document.getElementById('successBlock').style.display = '';
+    } else if (error) {
+      document.getElementById('statusText').textContent = 'Authorization failed';
+      document.getElementById('statusText').className = 'status error';
+      document.getElementById('errorDisplay').textContent = error + (params.get('error_description') ? ': ' + params.get('error_description') : '');
+      document.getElementById('errorBlock').style.display = '';
+    } else {
+      document.getElementById('statusText').textContent = 'Redirect endpoint ready';
+      document.getElementById('statusText').className = 'status';
+      document.getElementById('emptyBlock').style.display = '';
+    }
+
+    function copyCode() {
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copyCodeBtn');
+        btn.textContent = 'Copied!';
+        btn.className = 'copy-btn copied';
+        setTimeout(() => { btn.textContent = 'Copy Code'; btn.className = 'copy-btn'; }, 2000);
+      });
+    }
+
+    function copyUrl() {
+      navigator.clipboard.writeText(fullUrl).then(() => {
+        const btn = document.getElementById('copyUrlBtn');
+        btn.textContent = 'Copied!';
+        btn.className = 'copy-btn copied';
+        setTimeout(() => { btn.textContent = 'Copy Full URL'; btn.className = 'copy-btn'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

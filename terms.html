@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — VidFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .vf-header {
+      background: var(--dark-g);
+      padding: 1.25rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .vf-header-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+    }
+    .vf-logo-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .vf-logo-text {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: var(--cream);
+    }
+    .vf-header-back {
+      margin-left: auto;
+      font-family: var(--font-ui);
+      font-size: .75rem;
+      letter-spacing: .1em;
+      color: var(--lt-koh);
+      opacity: .7;
+      transition: opacity .2s;
+    }
+    .vf-header-back:hover { opacity: 1; }
+
+    .vf-hero {
+      background: var(--dark-g);
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .vf-hero .label { color: var(--kohaku); }
+    .vf-hero h1 {
+      font-family: var(--font-jp);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.3;
+      margin-bottom: .75rem;
+    }
+    .vf-hero .vf-date {
+      font-family: var(--font-ui);
+      font-size: .8rem;
+      letter-spacing: .1em;
+      color: var(--lt-koh);
+      opacity: .7;
+    }
+
+    .legal-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 0 5rem;
+    }
+    .legal-body h2 {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      color: var(--dark-g);
+      margin: 2.5rem 0 .75rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--kohaku);
+    }
+    .legal-body p {
+      color: var(--hai);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+      font-size: .95rem;
+    }
+    .legal-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem;
+    }
+    .legal-body ul li {
+      color: var(--hai);
+      font-size: .95rem;
+      line-height: 1.85;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .legal-body ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--kohaku);
+    }
+    .legal-body strong { color: var(--sumi); font-weight: 500; }
+    .legal-body a { color: var(--mid-g); text-decoration: underline; }
+
+    .vf-footer {
+      background: var(--sumi);
+      padding: 2rem 0;
+    }
+    .vf-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .vf-footer p {
+      font-family: var(--font-ui);
+      font-size: .75rem;
+      color: #888;
+      letter-spacing: .06em;
+    }
+    .vf-footer a {
+      color: #aaa;
+      margin: 0 .5rem;
+    }
+    .vf-footer a:hover { color: var(--cream); }
+  </style>
+</head>
+<body style="background:var(--cream);">
+
+<!-- VidFlow Header -->
+<header class="vf-header">
+  <div class="container vf-header-inner">
+    <svg class="vf-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" rx="20" fill="#0A1420"/>
+      <polygon points="15,22 28,22 50,62 72,22 85,22 50,70" fill="white"/>
+      <text x="50" y="90" font-family="Inter,sans-serif" font-size="10" font-weight="300" letter-spacing="1.5" fill="#C8963C" text-anchor="middle">VF</text>
+    </svg>
+    <span class="vf-logo-text">VIDFLOW</span>
+    <a href="index.html" class="vf-header-back">MIDORI FARM ↗</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="vf-hero">
+  <div class="container">
+    <p class="label">LEGAL / TERMS</p>
+    <h1>Terms of Service</h1>
+    <p class="vf-date">Last updated: June 20, 2026</p>
+  </div>
+</div>
+
+<!-- Content -->
+<main class="section">
+  <div class="container legal-body">
+
+    <p>Please read these Terms of Service carefully before using VidFlow. By installing or using VidFlow, you agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
+
+    <h2>1. Description of Service</h2>
+
+    <p>VidFlow ("<strong>Service</strong>") is an automated video management and cross-platform publishing tool that assists authorized users in discovering, processing, and publishing video content to social media platforms including TikTok, YouTube, Facebook, and Instagram. VidFlow operates as self-hosted software on your own server infrastructure.</p>
+
+    <h2>2. Eligibility</h2>
+
+    <p>You must be at least 18 years old to use VidFlow. By using the Service, you represent and warrant that:</p>
+    <ul>
+      <li>You are at least 18 years of age</li>
+      <li>You have full legal authority to enter into these Terms</li>
+      <li>Your use of VidFlow does not violate any applicable law or regulation</li>
+    </ul>
+
+    <h2>3. Authorized Use</h2>
+
+    <p>VidFlow may only be used to manage and publish content to social media accounts that you own or for which you have explicit written authorization from the account owner. You may not use VidFlow to access, manage, or publish content to accounts belonging to others without their consent.</p>
+
+    <h2>4. Platform Compliance</h2>
+
+    <p>By using VidFlow to publish content to social media platforms, you agree to fully comply with the terms of service, developer policies, and community guidelines of each platform, including but not limited to:</p>
+    <ul>
+      <li>TikTok Terms of Service and Community Guidelines</li>
+      <li>TikTok Developer Terms of Service and API Usage Guidelines</li>
+      <li>YouTube Terms of Service and Community Guidelines</li>
+      <li>Meta (Facebook / Instagram) Terms of Service and Community Guidelines</li>
+    </ul>
+    <p>You are solely and entirely responsible for ensuring that your use of VidFlow complies with all applicable platform policies. VidFlow accepts no liability for account suspensions, content removals, or other enforcement actions taken by platforms as a result of your content or usage patterns.</p>
+
+    <h2>5. TikTok API Usage</h2>
+
+    <p>VidFlow uses TikTok's Content Posting API under the TikTok Developer Terms of Service. By using VidFlow's TikTok integration, you agree that:</p>
+    <ul>
+      <li>You will only publish content to TikTok accounts you own or are explicitly authorized to manage</li>
+      <li>You will not use VidFlow to upload content that violates TikTok's Community Guidelines or Terms of Service</li>
+      <li>You will not use VidFlow for spam, automated manipulation, artificial engagement, or any other activity prohibited by TikTok</li>
+      <li>You will keep your TikTok access credentials confidential and secure on your server</li>
+      <li>You will promptly revoke VidFlow's TikTok access if you suspect unauthorized use</li>
+    </ul>
+
+    <h2>6. Content Responsibility</h2>
+
+    <p>You represent, warrant, and are solely responsible for ensuring that:</p>
+    <ul>
+      <li>You have all necessary rights, licenses, permissions, and consents to publish the content you upload through VidFlow</li>
+      <li>Your content does not infringe the intellectual property rights, privacy rights, or other rights of any third party</li>
+      <li>Your content complies with all applicable laws and regulations, including copyright law</li>
+      <li>Your content does not violate the community guidelines of any platform to which it is published</li>
+      <li>Any content depicting individuals was obtained with their consent</li>
+    </ul>
+
+    <h2>7. Prohibited Activities</h2>
+
+    <p>You may not use VidFlow to:</p>
+    <ul>
+      <li>Upload content that is illegal, hateful, defamatory, or violates any third party's rights</li>
+      <li>Engage in coordinated inauthentic behavior, spam, or manipulation of platform algorithms</li>
+      <li>Circumvent rate limits, quotas, or access controls imposed by platforms or VidFlow</li>
+      <li>Reverse-engineer, decompile, or create derivative works based on VidFlow's software</li>
+      <li>Use VidFlow in any manner that could damage the reputation of any platform or third party</li>
+    </ul>
+
+    <h2>8. Intellectual Property</h2>
+
+    <p>VidFlow's software, documentation, and related materials are protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use VidFlow for lawful purposes in accordance with these Terms. You may not copy, modify, sublicense, sell, or distribute VidFlow's software without prior written permission.</p>
+
+    <h2>9. Disclaimer of Warranties</h2>
+
+    <p>VidFlow is provided "<strong>as is</strong>" and "<strong>as available</strong>" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that:</p>
+    <ul>
+      <li>VidFlow will operate uninterrupted or error-free</li>
+      <li>Video uploads to platforms will always succeed</li>
+      <li>Platform APIs will remain available or unchanged</li>
+      <li>VidFlow will be free from security vulnerabilities</li>
+    </ul>
+
+    <h2>10. Limitation of Liability</h2>
+
+    <p>To the maximum extent permitted by applicable law, VidFlow and its developers shall not be liable for:</p>
+    <ul>
+      <li>Any content you publish through VidFlow</li>
+      <li>Account suspensions, bans, or penalties imposed by social media platforms</li>
+      <li>Loss of data, revenue, or business opportunity resulting from use of VidFlow</li>
+      <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+      <li>Damages arising from platform API changes that affect VidFlow's functionality</li>
+    </ul>
+
+    <h2>11. Service Availability and Modifications</h2>
+
+    <p>VidFlow may be modified, updated, suspended, or discontinued at any time without notice. We reserve the right to change these Terms at any time. Changes take effect upon posting to this page. Continued use of VidFlow after a Terms update constitutes your acceptance of the revised Terms.</p>
+
+    <h2>12. Termination</h2>
+
+    <p>We reserve the right to terminate or restrict access to VidFlow at any time for violation of these Terms. Upon termination, you must cease all use of VidFlow and delete all copies of the software.</p>
+
+    <h2>13. Governing Law</h2>
+
+    <p>These Terms are governed by and construed in accordance with the laws of the Socialist Republic of Vietnam, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be resolved in the competent courts of Vietnam.</p>
+
+    <h2>14. Contact</h2>
+
+    <p>For questions, concerns, or notices related to these Terms, please contact:</p>
+    <p>
+      <strong>VidFlow</strong><br>
+      Email: <a href="mailto:nguyennviett014@gmail.com">nguyennviett014@gmail.com</a>
+    </p>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="vf-footer">
+  <div class="container vf-footer-inner">
+    <p>© 2026 VidFlow. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>·
+      <a href="terms.html">Terms of Service</a>·
+      <a href="index.html">MIDORI FARM</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

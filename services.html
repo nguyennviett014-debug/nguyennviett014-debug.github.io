@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>体験サービス — MIDORI FARM</title>
+  <meta name="description" content="ブルーベリー狩り・ぶどう狩り・釣り&BBQ・砂場遊び・迷路・灯籠散歩など10種類の農園体験。5歳以下無料。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav scrolled" id="mainNav">
+  <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="about.html" data-i18n="nav.about">農園について</a>
+    <span class="nav-sep">·</span>
+    <a href="services.html" data-i18n="nav.services">体験サービス</a>
+    <span class="nav-sep">·</span>
+    <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+    <span class="nav-sep">·</span>
+    <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="ls-btn active" data-lang="ja">日</button>
+      <button class="ls-btn" data-lang="vi">VI</button>
+      <button class="ls-btn" data-lang="en">EN</button>
+      <button class="ls-btn" data-lang="zh">中</button>
+      <button class="ls-btn" data-lang="ko">한</button>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="about.html" data-i18n="nav.about">農園について</a>
+  <a href="services.html" data-i18n="nav.services">体験サービス</a>
+  <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+  <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  <div class="drawer-lang">
+    <button class="ls-btn active" data-lang="ja">日</button>
+    <button class="ls-btn" data-lang="vi">VI</button>
+    <button class="ls-btn" data-lang="en">EN</button>
+    <button class="ls-btn" data-lang="zh">中</button>
+    <button class="ls-btn" data-lang="ko">한</button>
+  </div>
+</div>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=1600&q=80&auto=format&fit=crop')">
+  <div class="page-hero-content container">
+    <p class="label" data-i18n="services.label">体験サービス / SERVICES</p>
+    <h1 data-i18n="services.title">農園の体験メニュー</h1>
+    <p data-i18n="services.hero.desc">果物狩り・BBQ・キッズ遊び場・灯籠散歩など、全10種類の体験をご用意しています。</p>
+  </div>
+</div>
+
+<!-- ═══ KIDS FREE BADGE ═══ -->
+<div style="background:var(--light); padding:1.5rem 0;">
+  <div class="container">
+    <div class="kids-free-note" data-anim="fade-up">
+      <span class="kids-free-icon">👶</span>
+      <p><strong data-i18n="svc.kids.free">5歳以下のお子様は無料でご入場いただけます。</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICE SECTIONS — 10 services
+════════════════════════════════════════ -->
+
+<!-- 01. Blueberry Picking ─ image LEFT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner">
+      <div class="svc-section-img" data-anim="fade-left">
+        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=800&q=80&auto=format&fit=crop" alt="Blueberry picking" loading="lazy">
+        <span class="svc-season" data-i18n="svc.blueberry.season">6月〜8月</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-right">
+        <p class="svc-section-cat">01 · BLUEBERRY PICKING</p>
+        <h2 class="svc-section-title" data-i18n="svc.blueberry.jp">ブルーベリー狩り</h2>
+        <p class="svc-section-en">🫐 BLUEBERRY PICKING</p>
+        <p class="svc-lead" data-i18n="svc.blueberry.lead">指でそっと摘んだブルーベリーが口の中で弾ける甘酸っぱさ。農園でしか味わえない感動の収穫体験です。</p>
+        <p class="svc-full-desc" data-i18n="svc.blueberry.desc">新鮮なブルーベリーを自分の手でたっぷり収穫。お子様も大喜びの定番体験です。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.blueberry.f1">採れたての果実をその場で試食</li>
+          <li data-i18n="svc.blueberry.f2">収穫量はそのままお持ち帰り可</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02. Grape Picking ─ image RIGHT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner flipped">
+      <div class="svc-section-img" data-anim="fade-right">
+        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80&auto=format&fit=crop" alt="Grape picking" loading="lazy">
+        <span class="svc-season" data-i18n="svc.grape.season">7月〜9月</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-left">
+        <p class="svc-section-cat">02 · GRAPE PICKING</p>
+        <h2 class="svc-section-title" data-i18n="svc.grape.jp">ぶどう狩り</h2>
+        <p class="svc-section-en">🍇 GRAPE PICKING</p>
+        <p class="svc-lead" data-i18n="svc.grape.lead">房いっぱいに実ったぶどうを丁寧に手摘みし、農園テラスでゆっくりと味わいましょう。</p>
+        <p class="svc-full-desc" data-i18n="svc.grape.desc">たわわに実ったぶどうを収穫し、農園テラスで味わいましょう。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.grape.f1">完熟ぶどうを手摘み収穫</li>
+          <li data-i18n="svc.grape.f2">テラスでの試食タイム・撮影スポット込み</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03. Fishing & BBQ ─ image LEFT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner">
+      <div class="svc-section-img" data-anim="fade-left">
+        <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?w=800&q=80&auto=format&fit=crop" alt="Fishing and BBQ" loading="lazy">
+        <span class="svc-season" data-i18n="svc.fishing.season">通年</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-right">
+        <p class="svc-section-cat">03 · FISHING & BBQ</p>
+        <h2 class="svc-section-title" data-i18n="svc.fishing.jp">釣り＆BBQ</h2>
+        <p class="svc-section-en">🎣 FISHING & CHARCOAL GRILL</p>
+        <p class="svc-lead" data-i18n="svc.fishing.lead">池に糸を垂らして待つ静かな時間。釣れた魚を炭火でじっくり焼く、農園だけの格別な食体験。</p>
+        <p class="svc-full-desc" data-i18n="svc.fishing.desc">釣った魚をその場で炭火焼きに。自然の中で過ごす最高のひとときです。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.fishing.f1">釣り道具はすべてレンタル込み</li>
+          <li data-i18n="svc.fishing.f2">釣った魚を炭火BBQで調理</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04. Sand Play & Excavator ─ image RIGHT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner flipped">
+      <div class="svc-section-img" data-anim="fade-right">
+        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80&auto=format&fit=crop" alt="Sand play with excavator" loading="lazy">
+        <span class="svc-season" data-i18n="svc.sand.season">通年</span>
+        <span class="svc-new-badge">NEW</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-left">
+        <p class="svc-section-cat">04 · SAND PLAY & EXCAVATOR</p>
+        <h2 class="svc-section-title" data-i18n="svc.sand.jp">砂場＆ショベルカー遊び</h2>
+        <p class="svc-section-en">🏖️ SAND PLAY & TOY EXCAVATOR</p>
+        <p class="svc-lead" data-i18n="svc.sand.lead">本格ショベルカーのおもちゃが揃う夢の砂場。子どもたちの「すごい！」が止まらない特別スペースです。</p>
+        <p class="svc-full-desc" data-i18n="svc.sand.desc">本格的なショベルカーのおもちゃが揃った砂場。お子様が夢中で遊べる特別なスペースです。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.sand.f1">大型ショベルカー・クレーン車で遊び放題</li>
+          <li data-i18n="svc.sand.f2">安全柵付き・保護者も安心</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05. Mini Maze ─ image LEFT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner">
+      <div class="svc-section-img" data-anim="fade-left">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&auto=format&fit=crop" alt="Mini maze in greenery" loading="lazy">
+        <span class="svc-season">通年</span>
+        <span class="svc-new-badge">NEW</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-right">
+        <p class="svc-section-cat">05 · MINI MAZE</p>
+        <h2 class="svc-section-title" data-i18n="svc.maze.jp">キッズ迷路</h2>
+        <p class="svc-section-en">🌿 MINI MAZE ADVENTURE</p>
+        <p class="svc-lead" data-i18n="svc.maze.lead">農園の緑の中に隠れた小さな迷路。家族で協力して出口を目指す、わくわく探検体験です。</p>
+        <p class="svc-full-desc" data-i18n="svc.maze.desc">農園の緑に囲まれた小さな迷路。お子様が探検気分で楽しめる人気スポットです。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.maze.f1">出口を目指して家族で挑戦</li>
+          <li data-i18n="svc.maze.f2">木陰で涼しく、ゆったり楽しめます</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06. Photo Spots ─ image RIGHT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner flipped">
+      <div class="svc-section-img" data-anim="fade-right">
+        <img src="https://images.unsplash.com/photo-1516641051054-9df6a1aad654?w=800&q=80&auto=format&fit=crop" alt="Photo spots at farm" loading="lazy">
+        <span class="svc-season">通年</span>
+        <span class="svc-new-badge">NEW</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-left">
+        <p class="svc-section-cat">06 · PHOTO SPOTS</p>
+        <h2 class="svc-section-title" data-i18n="svc.photo.jp">フォトスポット</h2>
+        <p class="svc-section-en">📸 SCENIC PHOTO SPOTS</p>
+        <p class="svc-lead" data-i18n="svc.photo.lead">自然光と農園の緑が最高のフィルター。農園内の映えスポットで大切な一枚を残しましょう。</p>
+        <p class="svc-full-desc" data-i18n="svc.photo.desc">農園内のさまざまな場所に設けられた映えスポット。大切な思い出を美しい写真に残しましょう。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.photo.f1">農園内に複数のフォトスポット設置</li>
+          <li data-i18n="svc.photo.f2">カップル・家族・子ども写真すべて対応</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07. Food Corner ─ image LEFT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner">
+      <div class="svc-section-img" data-anim="fade-left">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Food and snack corner" loading="lazy">
+        <span class="svc-season" data-i18n="svc.food.season">通年</span>
+        <span class="svc-new-badge">NEW</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-right">
+        <p class="svc-section-cat">07 · FOOD CORNER</p>
+        <h2 class="svc-section-title" data-i18n="svc.food.jp">バンミー＆軽食コーナー</h2>
+        <p class="svc-section-en">🍞 BÁNH MÌ & SNACK CORNER</p>
+        <p class="svc-lead" data-i18n="svc.food.lead">パリッと焼いたバンミーに揚げ春巻き、農園フルーツのアイスクリーム。農園ならではの贅沢な軽食体験。</p>
+        <p class="svc-full-desc" data-i18n="svc.food.desc">農園で収穫したフルーツとともに、バンミー（フランスパン）・揚げ春巻き・アイスクリームをご堪能ください。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.food.f1">本場バンミー（ベトナムバゲット）・揚げ春巻き</li>
+          <li data-i18n="svc.food.f2">農園フルーツのアイスクリーム</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08. Fresh Fruit Juice ─ image RIGHT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner flipped">
+      <div class="svc-section-img" data-anim="fade-right">
+        <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=800&q=80&auto=format&fit=crop" alt="Fresh fruit juice" loading="lazy">
+        <span class="svc-season">通年</span>
+        <span class="svc-new-badge">NEW</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-left">
+        <p class="svc-section-cat">08 · FRESH JUICE</p>
+        <h2 class="svc-section-title" data-i18n="svc.juice.jp">フレッシュフルーツジュース</h2>
+        <p class="svc-section-en">🥤 FARM FRESH JUICE</p>
+        <p class="svc-lead" data-i18n="svc.juice.lead">農園でその日に摘んだぶどうやブルーベリーを、その場で搾って提供。これ以上新鮮なジュースはありません。</p>
+        <p class="svc-full-desc" data-i18n="svc.juice.desc">農園で採れたぶどう・ブルーベリーをその場で搾った搾りたてジュース。農園の恵みをそのままお届けします。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.juice.f1">完全無添加・砂糖不使用のナチュラルジュース</li>
+          <li data-i18n="svc.juice.f2">収穫直後の果物を使用、栄養満点</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09. Kids Play Area ─ image LEFT -->
+<section class="svc-section">
+  <div class="container">
+    <div class="svc-section-inner">
+      <div class="svc-section-img" data-anim="fade-left">
+        <img src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=800&q=80&auto=format&fit=crop" alt="Kids play area" loading="lazy">
+        <span class="svc-season" data-i18n="svc.kids.season">通年・無料</span>
+      </div>
+      <div class="svc-section-text" data-anim="fade-right">
+        <p class="svc-section-cat">09 · KIDS' PLAY AREA</p>
+        <h2 class="svc-section-title" data-i18n="svc.kids.jp">キッズスペース</h2>
+        <p class="svc-section-en">🎠 KIDS' PLAY AREA — FREE</p>
+        <p class="svc-lead" data-i18n="svc.kids.lead">安全で楽しいキッズスペースで、お子様が自由にのびのびと遊べます。5歳以下は入場無料です。</p>
+        <p class="svc-full-desc" data-i18n="svc.kids.desc">小さなお子様が安心して遊べる専用エリア。パパママもゆっくりできます。</p>
+        <ul class="svc-features">
+          <li data-i18n="svc.kids.f1">遊具・砂場・ミニ滑り台が揃ったエリア</li>
+          <li data-i18n="svc.kids.f2">5歳以下無料・保護者同伴でご参加ください</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Lantern Evening Walk ─ FULL CINEMATIC SECTION -->
+<section class="svc-section" style="background:var(--dark-g); padding:0; overflow:hidden;">
+  <div style="position:relative; min-height:500px; display:flex; align-items:center;">
+    <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=1600&q=80&auto=format&fit=crop"
+         alt="Lantern evening walk"
+         loading="lazy"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45;">
+    <span class="svc-season" style="position:absolute;bottom:24px;right:24px;z-index:2;" data-i18n="svc.lantern.season">週末・夕方〜</span>
+    <div class="container" style="position:relative;z-index:1;padding-top:clamp(3rem,8vw,6rem);padding-bottom:clamp(3rem,8vw,6rem);">
+      <div data-anim="fade-up" style="max-width:640px;">
+        <p class="svc-section-cat" style="color:rgba(200,150,60,.85);">10 · LANTERN EVENING WALK</p>
+        <h2 class="svc-section-title" style="color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);" data-i18n="svc.lantern.jp">灯籠夕暮れ散歩</h2>
+        <p class="svc-section-en" style="color:rgba(255,255,255,.5);">🏮 LANTERN EVENING WALK — COUPLES</p>
+        <p class="svc-lead" style="color:rgba(255,255,255,.9);" data-i18n="svc.lantern.lead">夕暮れとともに灯り始める幻想的な灯籠の光。農園を二人で歩くこの時間は、一生の記憶になります。</p>
+        <p class="svc-full-desc" style="color:rgba(255,255,255,.65);" data-i18n="svc.lantern.desc">柔らかな灯籠の明かりに包まれた農園を、二人でゆっくりと歩く夕暮れ体験。カップルに大人気の特別プログラムです。</p>
+        <ul class="svc-features">
+          <li style="color:rgba(255,255,255,.85);border-bottom-color:rgba(255,255,255,.1);" data-i18n="svc.lantern.f1">週末限定・日没後に始まるナイトプログラム</li>
+          <li style="color:rgba(255,255,255,.85);border-bottom-color:transparent;" data-i18n="svc.lantern.f2">カップル専用フォトスポット・星空観賞つき</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══ -->
+<section class="section testimonials" style="background:var(--light);">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label" data-i18n="reviews.label">お客様の声 / REVIEWS</p>
+      <h2 data-i18n="reviews.title">ご来園者の声</h2>
+    </div>
+    <div class="reviews-grid" data-anim-stagger>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.1.text">「子どもたちが大喜びでした。ブルーベリー狩りは初めての体験で、とても新鮮でした！」</p>
+        <p class="review-author" data-i18n="review.1.author">— 田中さん（家族連れ）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.2.text">「灯籠散歩は本当にロマンティックで素敵でした。また来たいと思います。」</p>
+        <p class="review-author" data-i18n="review.2.author">— Nguyễn Lan（カップル）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.3.text">「釣った魚をその場で焼いて食べるのが最高でした。スタッフも親切でした。」</p>
+        <p class="review-author" data-i18n="review.3.author">— Chen Wei（家族）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+      <p data-i18n="footer.tagline">自然とともに生きる農園体験</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">fb</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LINE">ln</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.visit">アクセス</p>
+      <p data-i18n="footer.address">ベトナム・ラムドン省ダラット市</p>
+      <p data-i18n="footer.hours">営業時間：毎日 7:00〜18:00</p>
+      <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.links">リンク</p>
+      <a href="about.html" data-i18n="nav.about">農園について</a>
+      <a href="services.html" data-i18n="nav.services">体験サービス</a>
+      <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+      <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.newsletter">ニュースレター</p>
+      <p data-i18n="footer.newsletter.desc">最新情報をお届けします</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" data-i18n-ph="footer.email.ph" placeholder="メールアドレス" required>
+        <button type="submit" data-i18n="footer.subscribe">登録</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    <div class="container">
+      <p data-i18n="footer.disclaimer">※ お子様は必ず保護者の方と一緒にご参加ください。アレルギーをお持ちの方は事前にスタッフまでお申し付けください。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-btm-inner">
+      <p>© 2025 Midori Farm. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+        <a href="privacy.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Privacy Policy</a>
+        <a href="terms.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Terms of Service</a>
+      </div>
+      <div class="footer-lang">
+        <button class="ls-btn active" data-lang="ja">日</button>
+        <button class="ls-btn" data-lang="vi">VI</button>
+        <button class="ls-btn" data-lang="en">EN</button>
+        <button class="ls-btn" data-lang="zh">中</button>
+        <button class="ls-btn" data-lang="ko">한</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

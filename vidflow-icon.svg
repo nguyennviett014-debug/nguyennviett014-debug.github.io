@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162032"/>
+      <stop offset="100%" stop-color="#0A1420"/>
+    </linearGradient>
+    <linearGradient id="vfill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F0E8D8"/>
+      <stop offset="100%" stop-color="#C8963C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#C8963C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#C8963C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="200" ry="200" fill="url(#bg)"/>
+
+  <!-- Amber glow behind V tip -->
+  <ellipse cx="512" cy="720" rx="260" ry="100" fill="url(#glow)"/>
+
+  <!-- Bold V lettermark — 6-point polygon -->
+  <polygon
+    points="155,195 280,195 512,615 742,195 867,195 512,695"
+    fill="url(#vfill)"
+  />
+
+  <!-- VIDFLOW wordmark -->
+  <text
+    x="512" y="858"
+    font-family="Inter, Helvetica Neue, Arial, sans-serif"
+    font-size="50"
+    font-weight="300"
+    letter-spacing="14"
+    fill="#C8963C"
+    text-anchor="middle"
+    opacity="0.88"
+  >VIDFLOW</text>
+
+  <!-- Two small amber dots flanking the wordmark (decorative) -->
+  <circle cx="316" cy="845" r="4" fill="#C8963C" opacity="0.4"/>
+  <circle cx="708" cy="845" r="4" fill="#C8963C" opacity="0.4"/>
+</svg>

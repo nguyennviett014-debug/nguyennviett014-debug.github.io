@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIDORI FARM — みどりファーム 果物狩り体験</title>
+  <meta name="description" content="ブルーベリー狩り・ぶどう狩り・釣り＆BBQ。ご家族とカップルのためのダラット農園体験。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="about.html" data-i18n="nav.about">農園について</a>
+    <span class="nav-sep">·</span>
+    <a href="services.html" data-i18n="nav.services">体験サービス</a>
+    <span class="nav-sep">·</span>
+    <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+    <span class="nav-sep">·</span>
+    <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="ls-btn active" data-lang="ja">日</button>
+      <button class="ls-btn" data-lang="vi">VI</button>
+      <button class="ls-btn" data-lang="en">EN</button>
+      <button class="ls-btn" data-lang="zh">中</button>
+      <button class="ls-btn" data-lang="ko">한</button>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="about.html" data-i18n="nav.about">農園について</a>
+  <a href="services.html" data-i18n="nav.services">体験サービス</a>
+  <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+  <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  <div class="drawer-lang">
+    <button class="ls-btn active" data-lang="ja">日</button>
+    <button class="ls-btn" data-lang="vi">VI</button>
+    <button class="ls-btn" data-lang="en">EN</button>
+    <button class="ls-btn" data-lang="zh">中</button>
+    <button class="ls-btn" data-lang="ko">한</button>
+  </div>
+</div>
+
+<!-- ═══ HERO SLIDER ═══ -->
+<section class="hero" id="hero">
+  <div class="slider" id="heroSlider">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1466781338197-3deb47df06c3?w=1600&q=80&auto=format&fit=crop')">
+      <div class="slide-overlay"></div>
+      <div class="slide-text">
+        <p class="slide-eyebrow" data-i18n="hero.slide1.sub">ダラットの自然の中で</p>
+        <h1 class="slide-heading" data-i18n="hero.slide1.tagline">果物と過ごす<br>特別なひととき</h1>
+        <a href="services.html" class="slide-cta" data-i18n="hero.cta.services">体験を見る →</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=1600&q=80&auto=format&fit=crop')">
+      <div class="slide-overlay"></div>
+      <div class="slide-text">
+        <p class="slide-eyebrow" data-i18n="hero.slide2.sub">6月〜8月限定</p>
+        <h1 class="slide-heading" data-i18n="hero.slide2.tagline">ブルーベリー狩り<br>家族の週末</h1>
+        <a href="experience.html" class="slide-cta" data-i18n="hero.cta.services">体験を見る →</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=1600&q=80&auto=format&fit=crop')">
+      <div class="slide-overlay"></div>
+      <div class="slide-text">
+        <p class="slide-eyebrow" data-i18n="hero.slide3.sub">週末・カップル限定</p>
+        <h1 class="slide-heading" data-i18n="hero.slide3.tagline">灯籠の夜<br>二人の物語</h1>
+        <a href="experience.html" class="slide-cta" data-i18n="hero.cta.book">詳しく見る →</a>
+      </div>
+    </div>
+  </div>
+  <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous">&#8592;</button>
+  <button class="slider-btn slider-next" id="sliderNext" aria-label="Next">&#8594;</button>
+  <div class="slider-dots" id="sliderDots">
+    <button class="dot active" data-idx="0"></button>
+    <button class="dot" data-idx="1"></button>
+    <button class="dot" data-idx="2"></button>
+  </div>
+</section>
+
+<!-- ═══ CONCEPT BAR ═══ -->
+<div class="concept-bar" data-anim="fade-up">
+  <span class="concept-jp" data-i18n="concept.jp">自然とともに、心が潤う農園体験。</span>
+  <span class="concept-div">|</span>
+  <span class="concept-en" data-i18n="concept.en">A farm experience where nature nourishes the soul.</span>
+</div>
+
+<!-- ═══ SERVICES PREVIEW ═══ -->
+<section class="section" style="background: var(--light);">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label" data-i18n="services.label">体験サービス / SERVICES</p>
+      <h2 data-i18n="services.title">農園の体験メニュー</h2>
+    </div>
+    <div class="svc-grid" data-anim-stagger>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=600&q=80&auto=format&fit=crop" alt="Blueberry" loading="lazy">
+          <span class="svc-season" data-i18n="svc.blueberry.season">6月〜8月</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.blueberry.jp">ブルーベリー狩り</h3>
+          <p class="svc-name-en">BLUEBERRY PICKING</p>
+          <p class="svc-desc" data-i18n="svc.blueberry.desc">新鮮なブルーベリーを自分の手でたっぷり収穫。お子様も大喜びの定番体験です。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80&auto=format&fit=crop" alt="Grape" loading="lazy">
+          <span class="svc-season" data-i18n="svc.grape.season">7月〜9月</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.grape.jp">ぶどう狩り</h3>
+          <p class="svc-name-en">GRAPE PICKING</p>
+          <p class="svc-desc" data-i18n="svc.grape.desc">たわわに実ったぶどうを収穫し、農園テラスで味わいましょう。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=600&q=80&auto=format&fit=crop" alt="Lantern" loading="lazy">
+          <span class="svc-season" data-i18n="svc.lantern.season">週末・夕方〜</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.lantern.jp">灯籠夕暮れ散歩</h3>
+          <p class="svc-name-en">LANTERN EVENING WALK</p>
+          <p class="svc-desc" data-i18n="svc.lantern.desc">柔らかな灯籠の明かりに包まれた農園を、二人でゆっくりと歩く夕暮れ体験。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="Food corner" loading="lazy">
+          <span class="svc-season" data-i18n="svc.food.season">通年</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.food.jp">バンミー＆軽食コーナー</h3>
+          <p class="svc-name-en">FOOD & SNACK CORNER</p>
+          <p class="svc-desc" data-i18n="svc.food.desc">農園で収穫したフルーツとともに、バンミー・揚げ春巻き・アイスクリームをご堪能ください。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?w=600&q=80&auto=format&fit=crop" alt="Fishing and BBQ" loading="lazy">
+          <span class="svc-season" data-i18n="svc.fishing.season">通年</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.fishing.jp">釣り＆BBQ</h3>
+          <p class="svc-name-en">FISHING & GRILLED FISH BBQ</p>
+          <p class="svc-desc" data-i18n="svc.fishing.desc">釣った魚をその場で炭火焼きに。自然の中で過ごす最高のひとときです。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80&auto=format&fit=crop" alt="Moon gazing chill" loading="lazy">
+          <span class="svc-season" data-i18n="svc.chill.season">週末・夜</span>
+        </div>
+        <div class="svc-body">
+          <h3 class="svc-name-jp" data-i18n="svc.chill.jp">月見チルタイム</h3>
+          <p class="svc-name-en">MOON GAZING & CHILL</p>
+          <p class="svc-desc" data-i18n="svc.chill.desc">星空と月明かりの下、静かな農園でゆったりとした時間を。心が解きほぐれる特別なひとときです。</p>
+          <a href="services.html" class="text-link" data-i18n="svc.more">くわしく見る →</a>
+        </div>
+      </article>
+
+    </div>
+    <div style="text-align:center; margin-top: 2.5rem;" data-anim="fade-up">
+      <a href="services.html" class="btn-outline" style="display:inline-block; width:auto; padding:.85rem 2.5rem;" data-i18n="nav.services">体験サービスをすべて見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AUDIENCE PANELS ═══ -->
+<section class="audience" id="audience">
+  <div class="audience-grid">
+    <div class="panel" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80&auto=format&fit=crop')" data-anim="fade-right">
+      <div class="panel-overlay"></div>
+      <div class="panel-content">
+        <p class="label" data-i18n="audience.family.label">ご家族向け / FOR FAMILIES</p>
+        <h2 data-i18n="audience.family.title">子どもの笑顔が<br>輝く週末</h2>
+        <p data-i18n="audience.family.desc">お子様が思いきり遊び、家族みんなで自然の恵みを楽しむ特別な休日。</p>
+        <a href="experience.html" class="text-cta-light" data-i18n="audience.family.cta">ご予約はこちら →</a>
+      </div>
+    </div>
+    <div class="panel" style="background-image:url('https://images.unsplash.com/photo-1516641051054-9df6a1aad654?w=900&q=80&auto=format&fit=crop')" data-anim="fade-left">
+      <div class="panel-overlay"></div>
+      <div class="panel-content">
+        <p class="label" data-i18n="audience.couple.label">カップル向け / FOR COUPLES</p>
+        <h2 data-i18n="audience.couple.title">灯籠の夜<br>二人のための時間</h2>
+        <p data-i18n="audience.couple.desc">柔らかな灯籠の光の中で、大切な人と過ごす忘れられないひととき。</p>
+        <a href="experience.html" class="text-cta-light" data-i18n="audience.couple.cta">詳しく見る →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label" data-i18n="reviews.label">お客様の声 / REVIEWS</p>
+      <h2 data-i18n="reviews.title">ご来園者の声</h2>
+    </div>
+    <div class="reviews-grid" data-anim-stagger>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.1.text">「子どもたちが大喜びでした。ブルーベリー狩りは初めての体験で、とても新鮮でした！」</p>
+        <p class="review-author" data-i18n="review.1.author">— 田中さん（家族連れ）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.2.text">「灯籠散歩は本当にロマンティックで素敵でした。また来たいと思います。」</p>
+        <p class="review-author" data-i18n="review.2.author">— Nguyễn Lan（カップル）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.3.text">「釣った魚をその場で焼いて食べるのが最高でした。スタッフも親切でした。」</p>
+        <p class="review-author" data-i18n="review.3.author">— Chen Wei（家族）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+      <p data-i18n="footer.tagline">自然とともに生きる農園体験</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">fb</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LINE">ln</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.visit">アクセス</p>
+      <p data-i18n="footer.address">ベトナム・ラムドン省ダラット市</p>
+      <p data-i18n="footer.hours">営業時間：毎日 7:00〜18:00</p>
+      <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.links">リンク</p>
+      <a href="about.html" data-i18n="nav.about">農園について</a>
+      <a href="services.html" data-i18n="nav.services">体験サービス</a>
+      <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+      <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.newsletter">ニュースレター</p>
+      <p data-i18n="footer.newsletter.desc">最新情報をお届けします</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" data-i18n-ph="footer.email.ph" placeholder="メールアドレス" required>
+        <button type="submit" data-i18n="footer.subscribe">登録</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-btm-inner">
+      <p>© 2025 Midori Farm. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+        <a href="privacy.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Privacy Policy</a>
+        <a href="terms.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Terms of Service</a>
+      </div>
+      <div class="footer-lang">
+        <button class="ls-btn active" data-lang="ja">日</button>
+        <button class="ls-btn" data-lang="vi">VI</button>
+        <button class="ls-btn" data-lang="en">EN</button>
+        <button class="ls-btn" data-lang="zh">中</button>
+        <button class="ls-btn" data-lang="ko">한</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="m-fab" id="mFab">
+  <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

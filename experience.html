@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>体験の流れ — MIDORI FARM</title>
+  <meta name="description" content="ご家族・グループ向け6ステップと、カップル向け夕暮れ7ステップ。農園体験の流れをわかりやすくご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav scrolled" id="mainNav">
+  <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="about.html" data-i18n="nav.about">農園について</a>
+    <span class="nav-sep">·</span>
+    <a href="services.html" data-i18n="nav.services">体験サービス</a>
+    <span class="nav-sep">·</span>
+    <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+    <span class="nav-sep">·</span>
+    <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="ls-btn active" data-lang="ja">日</button>
+      <button class="ls-btn" data-lang="vi">VI</button>
+      <button class="ls-btn" data-lang="en">EN</button>
+      <button class="ls-btn" data-lang="zh">中</button>
+      <button class="ls-btn" data-lang="ko">한</button>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="about.html" data-i18n="nav.about">農園について</a>
+  <a href="services.html" data-i18n="nav.services">体験サービス</a>
+  <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+  <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  <div class="drawer-lang">
+    <button class="ls-btn active" data-lang="ja">日</button>
+    <button class="ls-btn" data-lang="vi">VI</button>
+    <button class="ls-btn" data-lang="en">EN</button>
+    <button class="ls-btn" data-lang="zh">中</button>
+    <button class="ls-btn" data-lang="ko">한</button>
+  </div>
+</div>
+
+<!-- ═══ HERO SPLIT — 2 panels ═══ -->
+<div class="exp-hero-split">
+  <div class="exp-hero-panel" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80&auto=format&fit=crop')">
+    <div class="exp-hero-panel-overlay"></div>
+    <div class="exp-hero-panel-content">
+      <p class="label" style="color:rgba(255,255,255,.6);" data-i18n="exp.tab.family">ご家族・グループ</p>
+      <h2 data-i18n="exp.family.title">家族・友人との一日プラン</h2>
+      <p data-i18n="exp.family.sub">お子様も大人も、思いきり楽しめる特別な一日</p>
+    </div>
+  </div>
+  <div class="exp-hero-panel" style="background-image:url('https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=900&q=80&auto=format&fit=crop')">
+    <div class="exp-hero-panel-overlay"></div>
+    <div class="exp-hero-panel-content">
+      <p class="label" style="color:rgba(255,255,255,.6);" data-i18n="exp.tab.couple">カップル（夕暮れ）</p>
+      <h2 data-i18n="exp.couple.title">夕暮れカップルプラン</h2>
+      <p data-i18n="exp.couple.sub">二人だけのロマンチックな夜時間</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<section class="section">
+  <div class="container">
+
+    <!-- TABS -->
+    <div class="exp-tabs" data-anim="fade-up">
+      <button class="exp-tab active" data-panel="family" data-i18n="exp.tab.family">ご家族・グループ</button>
+      <button class="exp-tab" data-panel="couple" data-i18n="exp.tab.couple">カップル（夕暮れ）</button>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         PANEL 1: FAMILY & FRIENDS
+    ══════════════════════════════════════ -->
+    <div class="exp-panel active" data-panel="family">
+
+      <!-- Badge & Intro -->
+      <div class="exp-panel-intro" data-anim="fade-up">
+        <div class="kids-free-note" style="margin-bottom:2rem;">
+          <span class="kids-free-icon">👶</span>
+          <p><strong data-i18n="svc.kids.free">5歳以下のお子様は無料でご入場いただけます。</strong></p>
+        </div>
+        <p class="label" data-i18n="exp.tab.family">ご家族・グループ</p>
+        <h2 class="exp-panel-title" data-i18n="exp.family.title">家族・友人との一日プラン</h2>
+        <p class="exp-panel-sub" data-i18n="exp.family.sub">お子様も大人も、思いきり楽しめる特別な一日</p>
+      </div>
+
+      <!-- Journey overview bar -->
+      <div class="exp-journey-overview" data-anim="fade-up">
+        <div class="exp-jov-stop"><span class="jov-emoji">📸</span><span class="jov-num">01</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🍇</span><span class="jov-num">02</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🏖️</span><span class="jov-num">03</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🎣</span><span class="jov-num">04</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🐟</span><span class="jov-num">05</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🍞</span><span class="jov-num">06</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🛍️</span><span class="jov-num">07</span></div>
+      </div>
+
+      <!-- Step cards -->
+      <div class="exp-journey" data-anim="fade-up">
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">01</span>
+          <span class="exp-step-emoji">📸</span>
+          <h3 data-i18n="exp.family.s1.title">フォトスポットで撮影</h3>
+          <p data-i18n="exp.family.s1.desc">農園内の映えスポットで入場記念の素敵な写真を撮りましょう。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.all">全員おすすめ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">02</span>
+          <span class="exp-step-emoji">🍇</span>
+          <h3 data-i18n="exp.family.s2.title">ぶどう・ベリー狩り</h3>
+          <p data-i18n="exp.family.s2.desc">旬の果物を自分の手でたっぷり収穫。子どもも大人も大喜び！</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.seasonal">季節限定体験</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">03</span>
+          <span class="exp-step-emoji">🏖️</span>
+          <h3 data-i18n="exp.family.s3.title">キッズ遊び場でめいっぱい遊ぶ</h3>
+          <p data-i18n="exp.family.s3.desc">砂場のショベルカー、ミニ迷路、遊具ゾーンでお子様が思い切り遊べます。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.kids">キッズ大好き</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">04</span>
+          <span class="exp-step-emoji">🎣</span>
+          <h3 data-i18n="exp.family.s4.title">池で釣り体験</h3>
+          <p data-i18n="exp.family.s4.desc">農園の池でのんびりと釣りを楽しみましょう。釣れた魚はそのまま料理します。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.all">全員おすすめ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">05</span>
+          <span class="exp-step-emoji">🐟</span>
+          <h3 data-i18n="exp.family.s5.title">農園グルメを楽しむ</h3>
+          <p data-i18n="exp.family.s5.desc">釣った魚のBBQ、バンミー、フレッシュジュース、アイスクリームで豊かな食事タイム。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.food">農園グルメ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">06</span>
+          <span class="exp-step-emoji">🍞</span>
+          <h3 data-i18n="exp.family.s5b.title">バンミー・飲み物・アイスを楽しむ</h3>
+          <p data-i18n="exp.family.s5b.desc">パリパリのバンミー、さっぱりとした農園ジュース、果物づくしのアイスクリームでのんびりと。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.food">農園グルメ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">07</span>
+          <span class="exp-step-emoji">🛍️</span>
+          <h3 data-i18n="exp.family.s6.title">収穫フルーツを購入</h3>
+          <p data-i18n="exp.family.s6.desc">自分で収穫したぶどうやベリーをお土産として購入してお帰りください。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.souvenir">お土産に</span>
+        </div>
+
+      </div>
+
+      <!-- Photo highlights -->
+      <div class="exp-highlights" data-anim="fade-up">
+        <div class="exp-highlight-grid">
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&auto=format&fit=crop" alt="Family fun" loading="lazy">
+          </div>
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80&auto=format&fit=crop" alt="Grape picking" loading="lazy">
+          </div>
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="Farm food" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /family panel -->
+
+    <!-- ══════════════════════════════════════
+         PANEL 2: COUPLES EVENING
+    ══════════════════════════════════════ -->
+    <div class="exp-panel" data-panel="couple">
+
+      <!-- Intro -->
+      <div class="exp-panel-intro" data-anim="fade-up">
+        <p class="label" data-i18n="exp.tab.couple">カップル（夕暮れ）</p>
+        <h2 class="exp-panel-title" data-i18n="exp.couple.title">夕暮れカップルプラン</h2>
+        <p class="exp-panel-sub" data-i18n="exp.couple.sub">二人だけのロマンチックな夜時間</p>
+      </div>
+
+      <!-- Journey overview bar -->
+      <div class="exp-journey-overview" data-anim="fade-up">
+        <div class="exp-jov-stop"><span class="jov-emoji">🏮</span><span class="jov-num">01</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">📸</span><span class="jov-num">02</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🎣</span><span class="jov-num">03</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🔥</span><span class="jov-num">04</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🥖</span><span class="jov-num">05</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🪵</span><span class="jov-num">06</span></div>
+        <span class="exp-jov-arrow">→</span>
+        <div class="exp-jov-stop"><span class="jov-emoji">🌙</span><span class="jov-num">07</span></div>
+      </div>
+
+      <!-- Step cards -->
+      <div class="exp-journey" data-anim="fade-up">
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">01</span>
+          <span class="exp-step-emoji">🏮</span>
+          <h3 data-i18n="exp.couple.s1.title">夕暮れ散歩＆灯籠</h3>
+          <p data-i18n="exp.couple.s1.desc">農園に灯る柔らかな灯籠の明かりの中をゆっくり二人で歩きます。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.romantic">ロマンチック</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">02</span>
+          <span class="exp-step-emoji">📸</span>
+          <h3 data-i18n="exp.couple.s2.title">ロマンチック撮影</h3>
+          <p data-i18n="exp.couple.s2.desc">灯籠と緑に囲まれたフォトスポットで、二人だけの特別な記念写真を。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.romantic">ロマンチック</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">03</span>
+          <span class="exp-step-emoji">🎣</span>
+          <h3 data-i18n="exp.couple.s3.title">一緒に釣り</h3>
+          <p data-i18n="exp.couple.s3.desc">のんびりと二人で釣りを楽しみましょう。会話も弾む穏やかな時間です。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.together">二人で</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">04</span>
+          <span class="exp-step-emoji">🔥</span>
+          <h3 data-i18n="exp.couple.s4.title">釣った魚をBBQグリル</h3>
+          <p data-i18n="exp.couple.s4.desc">釣れた魚を炭火でじっくりグリル。香ばしい香りが食欲をそそります。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.food">農園グルメ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">05</span>
+          <span class="exp-step-emoji">🥖</span>
+          <h3 data-i18n="exp.couple.s5.title">バンミーディナー</h3>
+          <p data-i18n="exp.couple.s5.desc">パリッとしたバンミーと農園の食材で、自然の中での特別なディナーを。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.food">農園グルメ</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">06</span>
+          <span class="exp-step-emoji">🪵</span>
+          <h3 data-i18n="exp.couple.s6.title">ジェンガゲーム</h3>
+          <p data-i18n="exp.couple.s6.desc">星空の下、笑い声とともにジェンガを楽しむ二人だけのひとときです。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.together">二人で</span>
+        </div>
+
+        <div class="exp-step-card">
+          <span class="exp-step-bg-num">07</span>
+          <span class="exp-step-emoji">🌙</span>
+          <h3 data-i18n="exp.couple.s7.title">月見タイム</h3>
+          <p data-i18n="exp.couple.s7.desc">静かな農園の中、満天の星と月を眺めながら過ごす最高に贅沢な時間。</p>
+          <span class="exp-step-tag" data-i18n="exp.tag.romantic">ロマンチック</span>
+        </div>
+
+      </div>
+
+      <!-- Photo highlights -->
+      <div class="exp-highlights" data-anim="fade-up">
+        <div class="exp-highlight-grid">
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=600&q=80&auto=format&fit=crop" alt="Lantern evening" loading="lazy">
+          </div>
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1516641051054-9df6a1aad654?w=600&q=80&auto=format&fit=crop" alt="Couple photo" loading="lazy">
+          </div>
+          <div class="exp-highlight-img">
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80&auto=format&fit=crop" alt="Moon night" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /couple panel -->
+
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══ -->
+<section class="section testimonials" style="background:var(--light);">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label" data-i18n="reviews.label">お客様の声 / REVIEWS</p>
+      <h2 data-i18n="reviews.title">ご来園者の声</h2>
+    </div>
+    <div class="reviews-grid" data-anim-stagger>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.1.text">「子どもたちが大喜びでした。ブルーベリー狩りは初めての体験で、とても新鮮でした！」</p>
+        <p class="review-author" data-i18n="review.1.author">— 田中さん（家族連れ）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.2.text">「灯籠散歩は本当にロマンティックで素敵でした。また来たいと思います。」</p>
+        <p class="review-author" data-i18n="review.2.author">— Nguyễn Lan（カップル）</p>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review.3.text">「釣った魚をその場で焼いて食べるのが最高でした。スタッフも親切でした。」</p>
+        <p class="review-author" data-i18n="review.3.author">— Chen Wei（家族）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+      <p data-i18n="footer.tagline">自然とともに生きる農園体験</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">fb</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LINE">ln</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.visit">アクセス</p>
+      <p data-i18n="footer.address">ベトナム・ラムドン省ダラット市</p>
+      <p data-i18n="footer.hours">営業時間：毎日 7:00〜18:00</p>
+      <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.links">リンク</p>
+      <a href="about.html" data-i18n="nav.about">農園について</a>
+      <a href="services.html" data-i18n="nav.services">体験サービス</a>
+      <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+      <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.newsletter">ニュースレター</p>
+      <p data-i18n="footer.newsletter.desc">最新情報をお届けします</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" data-i18n-ph="footer.email.ph" placeholder="メールアドレス" required>
+        <button type="submit" data-i18n="footer.subscribe">登録</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    <div class="container">
+      <p data-i18n="footer.disclaimer">※ お子様は必ず保護者の方と一緒にご参加ください。アレルギーをお持ちの方は事前にスタッフまでお申し付けください。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-btm-inner">
+      <p>© 2025 Midori Farm. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+        <a href="privacy.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Privacy Policy</a>
+        <a href="terms.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Terms of Service</a>
+      </div>
+      <div class="footer-lang">
+        <button class="ls-btn active" data-lang="ja">日</button>
+        <button class="ls-btn" data-lang="vi">VI</button>
+        <button class="ls-btn" data-lang="en">EN</button>
+        <button class="ls-btn" data-lang="zh">中</button>
+        <button class="ls-btn" data-lang="ko">한</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

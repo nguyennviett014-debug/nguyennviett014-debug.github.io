@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>農園について — MIDORI FARM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav scrolled" id="mainNav">
+  <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="about.html" data-i18n="nav.about">農園について</a>
+    <span class="nav-sep">·</span>
+    <a href="services.html" data-i18n="nav.services">体験サービス</a>
+    <span class="nav-sep">·</span>
+    <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+    <span class="nav-sep">·</span>
+    <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="ls-btn active" data-lang="ja">日</button>
+      <button class="ls-btn" data-lang="vi">VI</button>
+      <button class="ls-btn" data-lang="en">EN</button>
+      <button class="ls-btn" data-lang="zh">中</button>
+      <button class="ls-btn" data-lang="ko">한</button>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="about.html" data-i18n="nav.about">農園について</a>
+  <a href="services.html" data-i18n="nav.services">体験サービス</a>
+  <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+  <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+  <div class="drawer-lang">
+    <button class="ls-btn active" data-lang="ja">日</button>
+    <button class="ls-btn" data-lang="vi">VI</button>
+    <button class="ls-btn" data-lang="en">EN</button>
+    <button class="ls-btn" data-lang="zh">中</button>
+    <button class="ls-btn" data-lang="ko">한</button>
+  </div>
+</div>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1466781338197-3deb47df06c3?w=1600&q=80&auto=format&fit=crop')">
+  <div class="page-hero-content container">
+    <p class="label" data-i18n="about.label">農園について / ABOUT</p>
+    <h1 data-i18n="about.title">みどりファームについて</h1>
+    <p data-i18n="about.lead">ダラットの澄んだ空気と豊かな土壌に育まれた果物たち。</p>
+  </div>
+</div>
+
+<!-- ═══ MAIN ABOUT ═══ -->
+<section class="section">
+  <div class="container about-inner">
+    <div class="about-img" data-anim="fade-right">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80&auto=format&fit=crop" alt="Midori Farm garden" loading="lazy">
+    </div>
+    <div class="about-text" data-anim="fade-left">
+      <p class="label" data-i18n="about.label">農園について / ABOUT</p>
+      <h2 data-i18n="about.title">みどりファームについて</h2>
+      <p class="lead" data-i18n="about.lead">ダラットの澄んだ空気と豊かな土壌に育まれた果物たち。</p>
+      <p data-i18n="about.body">日本式の農業体験をベトナムのダラットでお届けしています。ブルーベリー、ぶどう、そして家族で楽しめる多彩なアクティビティを通じて、忘れられない思い出を作りましょう。</p>
+      <a href="services.html" class="text-cta" data-i18n="about.cta">サービスを見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECOND ABOUT BLOCK (image right) ═══ -->
+<section class="section" style="background: var(--light); padding-top: 0;">
+  <div class="container about-inner" style="direction: initial;">
+    <div class="about-text" data-anim="fade-right" style="order: 1;">
+      <p class="label">哲学 / PHILOSOPHY</p>
+      <h2 style="font-family:var(--font-jp); font-size:clamp(1.5rem,2.5vw,2.2rem); font-weight:400; color:var(--dark-g); margin-bottom:1.25rem; line-height:1.4;" data-i18n="about.title">みどりファームについて</h2>
+      <p data-i18n="about.body" style="color:var(--hai); line-height:1.8; margin-bottom:1.5rem;"></p>
+      <blockquote style="border-left: 3px solid var(--kohaku); padding-left: 1.25rem; margin: 1.5rem 0;">
+        <p style="font-family:var(--font-jp); font-size:1.1rem; color:var(--dark-g); font-weight:300; letter-spacing:.04em;">
+          「自然のままに、大切な人と。」
+        </p>
+        <p style="font-family:var(--font-ui); font-size:.78rem; color:var(--hai); margin-top:.5rem; letter-spacing:.1em;">— Midori Farm Philosophy</p>
+      </blockquote>
+    </div>
+    <div class="about-img" data-anim="fade-left" style="order: 2;">
+      <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80&auto=format&fit=crop" alt="Grapes on vine" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label">特徴 / FEATURES</p>
+      <h2>みどりファームの特徴</h2>
+    </div>
+    <div class="features-grid" data-anim-stagger>
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3 data-i18n="about.f1t">100%オーガニック</h3>
+        <p data-i18n="about.f1d">農薬・化学肥料不使用の安心栽培。大切なお子様にも安全です。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎋</div>
+        <h3 data-i18n="about.f2t">和の空間</h3>
+        <p data-i18n="about.f2d">日本庭園の美学を取り入れた、心落ち着く環境です。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🍇</div>
+        <h3 data-i18n="about.f3t">食べ放題</h3>
+        <p data-i18n="about.f3d">滞在中は収穫した果物を心ゆくまでお楽しみいただけます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📸</div>
+        <h3 data-i18n="svc.photo.jp">フォトスポット</h3>
+        <p data-i18n="svc.photo.desc">農園内に素敵な写真スポットが点在。思い出に残る写真を。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👶</div>
+        <h3>子供に優しい農園</h3>
+        <p data-i18n="svc.kids.free">5歳以下のお子様は無料でご入場いただけます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <h3 data-i18n="exp.couple.title">夕暮れカップルプラン</h3>
+        <p data-i18n="exp.couple.sub">二人だけのロマンチックな夜時間。灯籠の光の中で。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAP / ACCESS ═══ -->
+<section class="section" style="background: var(--light);">
+  <div class="container">
+    <div class="section-hd" data-anim="fade-up">
+      <p class="label" data-i18n="footer.visit">アクセス / ACCESS</p>
+      <h2>農園へのアクセス</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr; gap:2rem; align-items:start;" data-anim="fade-up">
+      <div style="background:var(--cream); border-radius:var(--r-card); overflow:hidden; aspect-ratio:16/7;">
+        <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=1200&q=80&auto=format&fit=crop" alt="Da Lat landscape" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem;">
+        <div style="background:var(--cream); border-radius:var(--r-card); padding:1.5rem;">
+          <p style="font-family:var(--font-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--hai);margin-bottom:.75rem;" data-i18n="footer.visit">アクセス</p>
+          <p style="font-family:var(--font-jp);color:var(--dark-g);font-size:.95rem;" data-i18n="footer.address">ベトナム・ラムドン省ダラット市</p>
+        </div>
+        <div style="background:var(--cream); border-radius:var(--r-card); padding:1.5rem;">
+          <p style="font-family:var(--font-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--hai);margin-bottom:.75rem;" data-i18n="footer.hours">営業時間</p>
+          <p style="font-family:var(--font-jp);color:var(--dark-g);font-size:.95rem;" data-i18n="footer.hours">営業時間：毎日 7:00〜18:00</p>
+        </div>
+        <div style="background:var(--cream); border-radius:var(--r-card); padding:1.5rem;">
+          <p style="font-family:var(--font-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--hai);margin-bottom:.75rem;">TEL / LINE</p>
+          <p style="font-family:var(--font-jp);color:var(--dark-g);font-size:.95rem;"><a href="tel:+84123456789">+84 123 456 789</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">MIDORI<span>FARM</span></a>
+      <p data-i18n="footer.tagline">自然とともに生きる農園体験</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">fb</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LINE">ln</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.visit">アクセス</p>
+      <p data-i18n="footer.address">ベトナム・ラムドン省ダラット市</p>
+      <p data-i18n="footer.hours">営業時間：毎日 7:00〜18:00</p>
+      <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.links">リンク</p>
+      <a href="about.html" data-i18n="nav.about">農園について</a>
+      <a href="services.html" data-i18n="nav.services">体験サービス</a>
+      <a href="experience.html" data-i18n="nav.experience">体験の流れ</a>
+      <a href="gallery.html" data-i18n="nav.gallery">ギャラリー</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h" data-i18n="footer.newsletter">ニュースレター</p>
+      <p data-i18n="footer.newsletter.desc">最新情報をお届けします</p>
+      <form class="nl-form" id="nlForm">
+        <input type="email" data-i18n-ph="footer.email.ph" placeholder="メールアドレス" required>
+        <button type="submit" data-i18n="footer.subscribe">登録</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-btm-inner">
+      <p>© 2025 Midori Farm. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+        <a href="privacy.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Privacy Policy</a>
+        <a href="terms.html" style="font-family:var(--font-ui);font-size:.72rem;color:var(--hai);letter-spacing:.1em;white-space:nowrap;">Terms of Service</a>
+      </div>
+      <div class="footer-lang">
+        <button class="ls-btn active" data-lang="ja">日</button>
+        <button class="ls-btn" data-lang="vi">VI</button>
+        <button class="ls-btn" data-lang="en">EN</button>
+        <button class="ls-btn" data-lang="zh">中</button>
+        <button class="ls-btn" data-lang="ko">한</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<style>
+/* about page extras */
+.about-text .lead { font-size:1.05rem; color:var(--mid-g); margin-bottom:1rem; font-weight:500; }
+.about-text p[data-i18n="about.body"] { color:var(--hai); line-height:1.8; margin-bottom:1.5rem; }
+/* add features translations */
+[data-i18n="about.f1t"]::before { content:''; }
+</style>
